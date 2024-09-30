@@ -83,10 +83,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
 
-                // Animaciones para portfolio-row1 y portfolio-row2
-                if (entry.target.id === 'portfolio') {
-                    const row1 = document.querySelectorAll('.portfolio-row1');
-                    const row2 = document.querySelectorAll('.portfolio-row2');
+                // Animaciones para products-row1 y products-row2
+                if (entry.target.id === 'products') {
+                    const row1 = document.querySelectorAll('.products-row1');
+                    const row2 = document.querySelectorAll('.products-row2');
 
                     row1.forEach((element, index) => {
                         setTimeout(() => {
