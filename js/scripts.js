@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.page-section');
 
     const observer = new IntersectionObserver(entries => {
@@ -106,9 +106,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const subheading = document.querySelector('.masthead-subheading');
-    const heading = document.querySelector('.masthead-heading');
+document.addEventListener('DOMContentLoaded', function () {
+    const heading = document.querySelector('.mast-heading2');
+    const subheading = document.querySelector('.mast-subheading2');
     const btn = document.querySelector('.animbtn');
 
     // Function to add 'visible' class to elements
@@ -120,24 +120,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Apply animation with delay
     makeVisible(subheading, 500); // 0.5 seconds delay
-    makeVisible(heading, 1000); // 1 second delay
-    makeVisible(btn, 1500);
+    makeVisible(heading, 500); // 1 second delay
+    makeVisible(btn, 1000);
 });
 
 $('.brands-carousel').owlCarousel({
     loop: true,
     margin: 10,
     autoplay: true,
-    autoplaySpeed:2000,
-    responsive:{
-        0:{
+    autoplaySpeed: 2000,
+    responsive: {
+        0: {
             items: 1
         },
-        600:{
+        600: {
             items: 3
         },
-        1000:{
+        1000: {
             items: 4
         }
     }
 });
+
+
+
+$(".home-carousel").owlCarousel({
+    items: 1,  // Mostrará una imagen a la vez
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,  // Cambia cada 3 segundos
+    dots: false,
+    nav: false,
+    smartSpeed: 3000,  // Tiempo de transición entre imágenes (1000ms = 1s)
+    animateOut: 'fadeOut',  // Desvanecer al salir
+    animateIn: 'fadeIn',  // Aparecer al entrar
+});
+
