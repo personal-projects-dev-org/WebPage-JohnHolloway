@@ -8,7 +8,6 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
-
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -20,7 +19,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -52,9 +50,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.page-section');
@@ -111,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const subheading = document.querySelector('.masthead-subheading');
     const heading = document.querySelector('.masthead-heading');
@@ -128,4 +122,22 @@ document.addEventListener('DOMContentLoaded', function() {
     makeVisible(subheading, 500); // 0.5 seconds delay
     makeVisible(heading, 1000); // 1 second delay
     makeVisible(btn, 1500);
+});
+
+$('.brands-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplaySpeed:2000,
+    responsive:{
+        0:{
+            items: 1
+        },
+        600:{
+            items: 3
+        },
+        1000:{
+            items: 4
+        }
+    }
 });
