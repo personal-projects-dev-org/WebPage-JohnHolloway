@@ -13245,3 +13245,102 @@ section#contact form#contactForm :-ms-input-placeholder {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+
+
+.ftco-about .img-about {
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.ftco-about .img-about .img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
+  box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
+}
+
+.ftco-about ul.about-info {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.ftco-about ul.about-info li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.ftco-about ul.about-info li span {
+  width: calc(100% - 130px);
+  font-weight: 600;
+  color: #123a5d;
+}
+
+.ftco-about ul.about-info li span:first-child {
+  font-weight: 600;
+  color: #000000;
+  width: 130px;
+}
+
+.ftco-about .my-interest {
+  margin-top: 30px;
+}
+
+.ftco-about .my-interest .interest-wrap {
+  width: 25%;
+  border-left: 2px solid #123a5d;
+  padding-left: 10px;
+}
+
+@media (max-width: 1199.98px) {
+  .ftco-about .my-interest .interest-wrap {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+  }
+}
+
+.ftco-about .my-interest .interest-wrap .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #123a5d;
+}
+
+.ftco-about .my-interest .interest-wrap .icon span {
+  color: #000000;
+  font-size: 18px;
+}
+
+.ftco-about .my-interest .interest-wrap .text {
+  font-weight: 600;
+  color: #000000;
+  padding-left: 5px;
+}
+
+.ftco-no-pt {
+  padding-top: 0 !important;
+}
+
+.ftco-no-pb {
+  padding-bottom: 0 !important;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
