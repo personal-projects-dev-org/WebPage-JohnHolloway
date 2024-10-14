@@ -12902,11 +12902,21 @@ header.masthead .masthead-heading {
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  z-index: 9;
 }
 
 #products .products-item .products-link .products-hover .products-hover-content {
   font-size: 1.25rem;
   color: white;
+  z-index: 10;
+}
+
+.products-link:hover img {
+  transform: scale(1.05);
+}
+
+.products-link img {
+  transition: transform 0.3s ease;
 }
 
 #products .products-item .products-link:hover .products-hover {
