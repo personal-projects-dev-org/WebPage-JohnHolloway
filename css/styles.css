@@ -12574,7 +12574,6 @@ p {
 .page-section .section-subheading.h3 {
   font-size: 1rem;
   font-weight: 400;
-  font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
 }
@@ -12714,7 +12713,6 @@ header.masthead::before {
 
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
-  font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: 'Roboto', sans-serif;
@@ -12736,7 +12734,6 @@ header.masthead .masthead-heading {
 
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
-    font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
@@ -12759,7 +12756,6 @@ header.masthead .masthead-heading {
   transition: opacity 0.5s ease, transform 0.5s ease;
   /* Transición suave */
   font-family: 'Roboto', sans-serif;
-  font-style: italic;
 }
 
 .mast-heading2.visible,
@@ -12774,7 +12770,6 @@ header.masthead .masthead-heading {
 .mast-heading,
 .mast-subheading {
   font-family: 'Roboto', sans-serif;
-  font-style: italic;
 }
 
 .fullscreen-carousel {
@@ -12815,7 +12810,6 @@ header.masthead .masthead-heading {
 }
 
 .text-overlay h2 {
-  font-style: italic;
   font-size: 4.5rem;
   font-weight: 700;
   line-height: 4.5rem;
@@ -12913,7 +12907,9 @@ header.masthead .masthead-heading {
 
 .products-link:hover img {
   transform: scale(1.05);
-  filter: grayscale(100%) brightness(0.6);; /* Aplica un filtro gris */
+  filter: grayscale(100%) brightness(0.6);
+  ;
+  /* Aplica un filtro gris */
 }
 
 .products-link img {
@@ -12938,7 +12934,6 @@ header.masthead .masthead-heading {
 }
 
 #products .products-item .products-caption .products-caption-subheading {
-  font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -12960,7 +12955,6 @@ header.masthead .masthead-heading {
 }
 
 .products-modal .modal-content p.item-intro {
-  font-style: italic;
   margin-bottom: 2rem;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
