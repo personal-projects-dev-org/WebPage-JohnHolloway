@@ -13210,6 +13210,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 100%;
 }
 
+/* Para abrir el menú desplegable al pasar el mouse */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Ajustar la posición del menú si es necesario */
+}
+
+/* Asegurarse de que el enlace se mantenga activo cuando el menú está abierto */
+.nav-item.dropdown:hover .nav-link {
+  color: #0056b3; /* Color del enlace cuando el menú está abierto */
+}
+
 li {
   font-family: 'Roboto', sans-serif;
 }
