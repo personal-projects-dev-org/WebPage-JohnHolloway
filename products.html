@@ -42,7 +42,8 @@
                         Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="acoustic-microphone.html">Micr&oacute;fonos ac&uacute;sticos</a>
+                        <li><a class="dropdown-item" href="acoustic-microphone.html">Micr&oacute;fonos
+                                ac&uacute;sticos</a>
                         </li>
                         <li class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="correlators.html">Correladores</a></li>
@@ -56,6 +57,7 @@
     </div>
 </nav>
 
+<!--
 <header class="masthead" style="height: 100vh;">
     <div class="container">
         <div>
@@ -70,7 +72,45 @@
                 style="position: absolute; bottom: 20px; right: 20px; max-width: 100px; height: auto;">
         </div>
     </div>
-</header>
+</header>-->
+
+<div class="owl-carousel products-carousel owl-theme fullscreen-carousel" id="page-top">
+    <div class="item">
+        <img src="assets/valvulasjohnholloway.jpg" alt="Image 1" />
+        <div class="text-overlay">
+            <h2 class="mast-heading2">Microfonos Acusticos</h2>
+            <p class="mast-subheading">Descripción de la imagen 1.</p>
+            <br>
+            <div class="animbtn"><a class="btn btnmedia btn-primary btn-xl text-uppercase"
+                    href="acoustic-microphone.html">Conocer
+                    m&aacute;s</a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/img/products/multipurposecorrelador.jpg" alt="Image 2" />
+        <div class="text-overlay">
+            <h2 class="mast-heading">Correladores</h2>
+            <p class="mast-subheading">Descripción de la imagen 2.</p>
+            <br>
+            <div class="btnmedia"><a class="btn btnmedia btn-primary btn-xl text-uppercase"
+                    href="correlators.html">Conocer
+                    m&aacute;s</a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="assets/img/products/localizadoresdetuberiasyvalvulas.jpg" alt="Image 3" />
+        <div class="text-overlay">
+            <h2 class="mast-heading">Loggers</h2>
+            <p class="mast-subheading">Descripción de la imagen 3.</p>
+            <br>
+            <div class="btnmedia"><a class="btn btnmedia btn-primary btn-xl text-uppercase" href="loggers.html">Conocer
+                    m&aacute;s</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="menu">
     <div class="menu-item">
@@ -187,56 +227,6 @@
     </div>
 </section>
 
-<style>
-    hr {
-        border: none;
-        height: 4px;
-        background-color: #61666B;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 20px;
-        background-color: #61666B;
-    }
-
-    .menu-item {
-        flex: 1;
-        text-align: center;
-    }
-
-    .menu-item h3 {
-        margin: 0;
-    }
-
-    .menu-item a {
-        text-decoration: none;
-        color: #ffffff;
-        display: block;
-        padding: 10px 0;
-        transition: background-color 0.3s ease;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .menu-item a:hover {
-        color: #5DA3E3;
-    }
-
-    @media (max-width: 768px) {
-        .menu {
-            flex-direction: column;
-        }
-
-        .menu-item {
-            margin-bottom: 10px;
-        }
-    }
-</style>
-
-
-
 <!-- Contact-->
 <section class="page-section" id="contact">
     <div class="container">
@@ -335,12 +325,121 @@
     </div>
 </footer>
 
+<style>
+    .text-overlay {
+        position: absolute;
+        /* Posicionamos el texto de forma absoluta */
+        top: 50%;
+        /* Centra verticalmente */
+        left: 50%;
+        /* Centra horizontalmente */
+        transform: translate(-50%, -50%) translateX(100%);
+        /* Mueve el texto hacia la derecha y lo centra */
+        opacity: 0;
+        /* Oculta el texto al principio */
+        transition: opacity 1s ease, transform 1s ease;
+        /* Transición suave para opacidad y movimiento */
+    }
+
+    .text-overlay.show {
+        opacity: 1;
+        /* Muestra el texto */
+        transform: translate(-50%, -50%) translateX(0);
+        /* Mueve el texto a su posición original centrada */
+    }
+
+    .item {
+        position: relative;
+        /* Necesario para que el texto se centre dentro del contenedor */
+    }
+
+    hr {
+        border: none;
+        height: 4px;
+        background-color: #61666B;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+        background-color: #61666B;
+    }
+
+    .menu-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .menu-item h3 {
+        margin: 0;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: #ffffff;
+        display: block;
+        padding: 10px 0;
+        transition: background-color 0.3s ease;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .menu-item a:hover {
+        color: #5DA3E3;
+    }
+
+    @media (max-width: 768px) {
+        .menu {
+            flex-direction: column;
+        }
+
+        .menu-item {
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
+
+<script>
+    // JavaScript
+    $(document).ready(function () {
+        $(".products-carousel").owlCarousel({
+            items: 1, // Mostrar una imagen a la vez
+            autoplay: true,
+            autoplayTimeout: 5000, // Tiempo de duración de cada imagen (5 segundos)
+            loop: true,
+            dots: false,
+            nav: false,
+            animateOut: 'fadeOut',  // Desvanecer al salir
+            animateIn: 'fadeIn',  // Aparecer al entrar
+
+            onInitialized: function (event) {
+                // Muestra el texto de la primera imagen con un pequeño retraso
+                setTimeout(function () {
+                    $(event.target).find(".owl-item.active .text-overlay").addClass("show");
+                }, 1000); // Cambia este valor si deseas ajustar el retraso
+            },
+
+            onTranslated: function (event) {
+                // Ocultar el texto de todos los elementos
+                $(".text-overlay").removeClass("show");
+
+                // Esperar 1 segundo y luego mostrar el texto de la imagen actual
+                setTimeout(function () {
+                    $(event.target).find(".owl-item.active .text-overlay").addClass("show");
+                }, 1000); // Cambia este valor para ajustar el retraso (1 segundo aquí)
+            }
+        });
+    });
+
+</script>
 
 </body>
 
