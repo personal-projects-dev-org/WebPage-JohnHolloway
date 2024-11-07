@@ -98,6 +98,63 @@
 </div>
 <!-- About End -->
 
+<section id="why-us" class="why-us">
+    <h2>¿POR QU&Eacute; NOSOTROS?</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="assets/slogan1.png" alt="Mission Image">
+            <div class="icon"><i class="fas fa-server"></i></div>
+            <h3>MISION</h3>
+            <p>
+                En John Holloway and Associates, comprendemos que la edad de la infraestructura, su bajo
+                desempeño y el control adecuado del agua son preocupaciones y prioridades cruciales para los
+                organismos operadores.
+            </p>
+        </div>
+        <div class="card">
+            <img src="assets/slogan3.png" alt="Plan Image">
+            <div class="icon"><i class="fas fa-sun"></i></div>
+            <h3>VISION</h3>
+            <p>Lideramos el desarrollo de tecnologías de agua inteligentes que
+                ayudan a reducir la pérdida de agua potable debido a ineficiencias en la infraestructura y
+                a preservar el agua como el recurso mundial más valioso. </p>
+        </div>
+        <div class="card">
+            <img src="assets/slogan4.png" alt="Vision Image">
+            <div class="icon"><i class="fas fa-briefcase"></i></div>
+            <h3>ASOCIACIONES</h3>
+            <p>GUTERMANN es un orgulloso socio tecnológico de una serie de empresas líderes en
+                tecnología a nivel mundial. Todos han reconocido que contamos con una cartera de productos
+                única y una clara ventaja tecnológica en su campo.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <div class="row">
+            <!-- Columna para la imagen -->
+            <div class="col-md-6">
+                <img src="assets/gutermann.png" alt="Laptop" class="img-fluid">
+            </div>
+
+            <!-- Columna para el texto -->
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="text-content">
+                    <p class="text-muted">
+                        Para enfrentar las pérdidas de manera efectiva, incrementar la rentabilidad, y mejorar la
+                        eficiencia y la
+                        confiabilidad del sistema, es esencial contar con la instrumentación adecuada y la tecnología
+                        más
+                        avanzada. Hemos representado en México a la marca: Gutermann A.G., la marca mundial líder en
+                        equipos de detección de fugas de agua potable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Contact-->
 <section class="page-section" id="contact">
     <div class="container">
@@ -197,6 +254,54 @@
 </footer>
 
 <style>
+    #first-img,
+    #second-img {
+        opacity: 0;
+        /* Comienza oculto */
+        transform: translateY(20px);
+        /* Desplazado hacia abajo */
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    #first-img.animate,
+    #second-img.animate {
+        opacity: 1;
+        /* Aparece completamente */
+        transform: translateY(0);
+        /* Vuelve a su posición original */
+    }
+
+
+    #about2-section {
+        opacity: 0;
+        /* Comienza oculto */
+        transform: translateY(50px);
+        /* Desplazado hacia abajo */
+        transition: opacity 0.8s ease, transform 0.8s ease;
+        /* Duración y suavidad de la animación */
+    }
+
+    #about2-section.animate {
+        opacity: 1;
+        /* Aparece completamente */
+        transform: translateY(0);
+        /* Vuelve a su posición original */
+    }
+
+    .why-us,
+    .about-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .why-us.animate,
+    .about-section.animate {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
     .img-fluid {
         max-width: 85%;
         /* Reduce el tamaño de la imagen */
@@ -209,6 +314,86 @@
         margin: 0 auto;
         /* Centrar la imagen */
     }
+
+    .why-us {
+        text-align: center;
+    }
+
+    .why-us h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .why-us p {
+        font-size: 1em;
+        color: #555;
+        margin-bottom: 2em;
+    }
+
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan a la siguiente línea */
+    }
+
+    @media (max-width: 768px) {
+        .cards-container {
+            flex-direction: column;
+            /* Cambia a disposición en columna en pantallas pequeñas */
+            gap: 20px;
+            align-items: center;
+            /* Centra los elementos en la columna */
+        }
+
+        .card {
+            max-width: 90%;
+            /* Ajusta el ancho para pantallas pequeñas */
+        }
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .icon {
+        background-color: #f9f1e7;
+        color: #5DA3E3;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        margin: -30px auto 15px;
+    }
+
+    .card h3 {
+        font-size: 1.25em;
+        color: #333;
+        margin: 0.5em 0;
+    }
+
+    .card p {
+        font-size: 0.9em;
+        color: #666;
+        padding: 0 20px 20px;
+    }
 </style>
 
 <script src="js/jquery.min.js"></script>
@@ -219,26 +404,46 @@
 <script src="js/scripts.js"></script>
 
 <script>
-    $(document).ready(function () {
-        let animated = false;
 
-        function isScrolledIntoView(elem) {
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
-            var elemTop = $(elem).offset().top;
-            var elemBottom = elemTop + $(elem).height();
+    document.addEventListener('DOMContentLoaded', function () {
+        const aboutSection = document.getElementById('about2-section');
+        const firstImg = document.getElementById('first-img');
+        const secondImg = document.getElementById('second-img');
 
-            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-        }
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutSection.classList.add('animate');
 
-        $(window).on('scroll', function () {
-            if (!animated && isScrolledIntoView('#about2-section')) {
-                animated = true;
-                $('#first-img').fadeIn(1000, function () {
-                    $('#second-img').fadeIn(1000);
-                });
-            }
-        });
+                    // Animar la primera imagen
+                    firstImg.classList.add('animate');
+
+                    // Retraso para animar la segunda imagen
+                    setTimeout(() => {
+                        secondImg.classList.add('animate');
+                    }, 400); // Cambia 400 ms por el tiempo que desees para el retraso
+
+                    observer.unobserve(aboutSection);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(aboutSection);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('#why-us, .about-section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => observer.observe(section));
     });
 </script>
 
