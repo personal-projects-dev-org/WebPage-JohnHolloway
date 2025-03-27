@@ -12687,7 +12687,8 @@ p {
 
 
 
-header.masthead {
+
+header.mastheadAcoustic {
   position: relative;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
@@ -12697,14 +12698,14 @@ header.masthead {
   /* Asegúrate de que el pseudo-elemento no se salga del contenedor */
 }
 
-header.masthead::before {
+header.mastheadAcoustic::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/valvulasjohnholloway.jpg");
+  background-image: url("../assets/valvulasAcoustic.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -12714,14 +12715,14 @@ header.masthead::before {
   /* Asegúrate de que el pseudo-elemento esté detrás del contenido */
 }
 
-header.masthead .masthead-subheading {
+header.mastheadAcoustic .masthead-subheading {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: 'Roboto', sans-serif;
 }
 
-header.masthead .masthead-heading {
+header.mastheadAcoustic .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -12730,18 +12731,218 @@ header.masthead .masthead-heading {
 }
 
 @media (min-width: 768px) {
-  header.masthead {
+  header.mastheadAcoustic {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
 
-  header.masthead .masthead-subheading {
+  header.mastheadAcoustic .masthead-subheading {
     font-size: 2.25rem;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
 
-  header.masthead .masthead-heading {
+  header.mastheadAcoustic .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+
+
+header.mastheadLoggers {
+  position: relative;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  /* Asegúrate de que el pseudo-elemento no se salga del contenedor */
+}
+
+header.mastheadLoggers::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/valvulasLoggers.JPG");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(20%) contrast(100%) opacity(0.9);
+  z-index: -1;
+  /* Asegúrate de que el pseudo-elemento esté detrás del contenido */
+}
+
+header.mastheadLoggers .masthead-subheading {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header.mastheadLoggers .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+  header.mastheadLoggers {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+
+  header.mastheadLoggers .masthead-subheading {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  header.mastheadLoggers .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+
+
+
+
+
+header.mastheadCorrelator {
+  position: relative;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  /* Asegúrate de que el pseudo-elemento no se salga del contenedor */
+}
+
+header.mastheadCorrelator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/valvulasCorrelator.JPG");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(20%) contrast(100%) opacity(0.9);
+  z-index: -1;
+  /* Asegúrate de que el pseudo-elemento esté detrás del contenido */
+}
+
+header.mastheadCorrelator .masthead-subheading {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header.mastheadCorrelator .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+  header.mastheadCorrelator {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+
+  header.mastheadCorrelator .masthead-subheading {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  header.mastheadCorrelator .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+
+
+
+
+
+
+
+header.mastheadAbout {
+  position: relative;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  /* Asegúrate de que el pseudo-elemento no se salga del contenedor */
+}
+
+header.mastheadAbout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/valvulasabout.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(20%) contrast(100%) opacity(0.9);
+  z-index: -1;
+  /* Asegúrate de que el pseudo-elemento esté detrás del contenido */
+}
+
+header.mastheadAbout .masthead-subheading {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+header.mastheadAbout .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+  header.mastheadAbout {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+
+  header.mastheadAbout .masthead-subheading {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  header.mastheadAbout .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
@@ -13051,10 +13252,6 @@ header.masthead .masthead-heading {
 .team-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
-}
-
-.img-brand {
-  height: 2.75rem;
 }
 
 section#contact {
