@@ -12705,7 +12705,7 @@ header.mastheadAcoustic::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/valvulasAcoustic.JPG");
+  background-image: url("../assets/img/backgrounds/acoustic.JPG");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -12769,7 +12769,7 @@ header.mastheadLoggers::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/valvulasLoggers.JPG");
+  background-image: url("../assets/img/backgrounds/loggers.JPG");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -12836,7 +12836,7 @@ header.mastheadCorrelator::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/valvulasCorrelator.JPG");
+  background-image: url("../assets/img/backgrounds/correlator.JPG");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -12905,7 +12905,7 @@ header.mastheadAbout::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/valvulasabout.JPG");
+  background-image: url("../assets/img/backgrounds/about.JPG");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
