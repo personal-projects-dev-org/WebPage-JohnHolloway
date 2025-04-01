@@ -26,8 +26,8 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="assets/img/backgrounds/imagotipohollowayblanco.png" height="600px"
-                alt="Holloway" /></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/img/backgrounds/imagotipohollowayblanco.png"
+                height="600px" alt="Holloway" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -78,7 +78,8 @@
                     <img id="first-img" src="assets/img/products/localizadoresdetuberiasyvalvulas.png"
                         class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
                     <div class="position-absolute w-75" style="top: 30%; left: 25%;">
-                        <img id="second-img" src="assets/img/backgrounds/slogan2.png" class="img-fluid w-100 rounded" alt="">
+                        <img id="second-img" src="assets/img/backgrounds/slogan2.png" class="img-fluid w-100 rounded"
+                            alt="">
                     </div>
                 </div>
             </div>
@@ -167,60 +168,40 @@
             <h2 class="section-heading text-uppercase">Contacto</h2>
             <br>
             <br>
-            <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
         </div>
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- * * SB Forms Contact Form * *-->
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- This form is pre-integrated with SB Forms.-->
-        <!-- To make this form functional, sign up at-->
-        <!-- https://startbootstrap.com/solution/contact-forms-->
-        <!-- to get an API token!-->
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <form id="contactForm" method="POST" action="https://formsubmit.co/78207300ff706cbe6e653c2dfb78494d">
             <div class="row align-items-stretch mb-5">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <!-- Name input-->
                         <input class="form-control" id="name" type="text" placeholder="Nombre *"
-                            data-sb-validations="required" />
+                            data-sb-validations="required" name="Nombre" />
                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                     </div>
                     <div class="form-group">
-                        <!-- Email address input-->
                         <input class="form-control" id="email" type="email" placeholder="Email *"
-                            data-sb-validations="required,email" />
+                            data-sb-validations="required,email" name="email" />
                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                     </div>
                     <div class="form-group mb-md-0">
-                        <!-- Phone number input-->
                         <input class="form-control" id="phone" type="tel" placeholder="Telefono *"
-                            data-sb-validations="required" />
+                            data-sb-validations="required" name="Telefono" />
                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group form-group-textarea mb-md-0">
-                        <!-- Message input-->
                         <textarea class="form-control" id="message" placeholder="Mensaje *"
-                            data-sb-validations="required"></textarea>
+                            data-sb-validations="required" name="Mensaje"></textarea>
                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Submit success message-->
-            <!---->
-            <!-- This is what your users will see when the form-->
-            <!-- has successfully submitted-->
             <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center text-white mb-3">
                     <div class="fw-bolder">Form submission successful!</div>
-                    To activate this form, sign up at
-                    <br />
-                    <a
-                        href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                 </div>
             </div>
             <!-- Submit error message-->
@@ -233,9 +214,11 @@
             <!-- Submit Button-->
             <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton"
                     type="submit">Enviar</button></div>
+            <input type="hidden" name="_next" value="https://solucionesholloway.com/">
         </form>
     </div>
 </section>
+
 
 <!-- Footer-->
 <footer class="footer py-4">
@@ -408,7 +391,8 @@
     .link-image:hover {
         opacity: 0.8;
         transform: scale(1.05);
-        filter: brightness(0.8) contrast(1.2); /* Hace la imagen más oscura con más contraste */
+        filter: brightness(0.8) contrast(1.2);
+        /* Hace la imagen más oscura con más contraste */
     }
 </style>
 
