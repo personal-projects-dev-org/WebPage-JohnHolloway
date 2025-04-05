@@ -13026,7 +13026,7 @@ header.mastheadAbout .masthead-heading {
 /* Media queries para dispositivos móviles */
 @media (max-width: 767px) {
   .fullscreen-carousel .item img {
-    height: 80vh; /* Altura reducida en móviles para permitir scroll */
+    height: 85vh; /* Altura reducida en móviles para permitir scroll */
   }
   
   /* Asegurar que el cuerpo del documento sea scrolleable */
