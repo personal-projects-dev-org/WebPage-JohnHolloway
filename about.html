@@ -102,7 +102,7 @@
 </div>
 <!-- About End -->
 
-<section id="why-us" class="why-us">
+<section class="why-us">
     <h2>NUESTROS VALORES</h2>
     <div class="cards-container">
         <div class="card">
@@ -138,7 +138,7 @@
     <div class="container">
         <div class="row">
             <!-- Columna para la imagen -->
-            <div class="col-md-6">
+            <div class="gutermann-logo col-md-6">
                 <a href="https://es.gutermann-water.com/" target="_blank">
                     <img src="assets/img/backgrounds/gutermann.png" alt="Laptop" class="img-fluid link-image">
                 </a>
@@ -219,7 +219,6 @@
     </div>
 </section>
 
-
 <!-- Footer-->
 <footer class="footer py-4">
     <div class="container">
@@ -276,19 +275,16 @@
         /* Vuelve a su posición original */
     }
 
-    .why-us,
     .about-section {
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.8s ease, transform 0.8s ease;
     }
 
-    .why-us.animate,
     .about-section.animate {
         opacity: 1;
         transform: translateY(0);
     }
-
 
     .img-fluid {
         max-width: 85%;
@@ -339,6 +335,15 @@
         .card {
             max-width: 90%;
             /* Ajusta el ancho para pantallas pequeñas */
+        }
+
+        .about-section {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .gutermann-logo {
+            padding-bottom: 3rem;
         }
     }
 
@@ -394,6 +399,29 @@
         filter: brightness(0.8) contrast(1.2);
         /* Hace la imagen más oscura con más contraste */
     }
+
+
+    .why-us {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .why-us.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .card.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
 
 <script src="js/jquery.min.js"></script>
@@ -432,7 +460,7 @@
     });
 
     document.addEventListener('DOMContentLoaded', function () {
-        const sections = document.querySelectorAll('#why-us, .about-section');
+        const sections = document.querySelectorAll('.about-section');
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -445,6 +473,28 @@
 
         sections.forEach(section => observer.observe(section));
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const section = document.querySelector('.why-us');
+        const cards = document.querySelectorAll('.why-us .card');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    section.classList.add('visible');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add('visible');
+                        }, index * 300); // Delay para cada tarjeta
+                    });
+                    observer.disconnect(); // Solo una vez
+                }
+            });
+        }, { threshold: 0.3 });
+
+        observer.observe(section);
+    });
+
 </script>
 
 </body>
