@@ -13003,25 +13003,37 @@ header.mastheadAbout .masthead-heading {
 }
 
 .fullscreen-carousel {
-  position: relative; /* Cambiado de absolute */
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh; /* Asegura que al menos mida el alto de la pantalla */
-  height: auto; /* Se ajusta al contenido si es mayor */
-  z-index: 0; /* Opcional, pero evita que se esconda el contenido */
+  height: auto; /* Permite que el contenido sea scrolleable */
+  z-index: 0;
 }
 
 .fullscreen-carousel .item {
   position: relative;
-  /* Asegúrate de que el contenedor sea relativo */
 }
 
 .fullscreen-carousel .item img {
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* Altura en pantallas grandes */
+  max-height: 100vh;
   object-fit: cover;
   filter: brightness(20%) contrast(100%) opacity(0.9);
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 767px) {
+  .fullscreen-carousel .item img {
+    height: 70vh; /* Altura reducida en móviles para permitir scroll */
+  }
+  
+  /* Asegurar que el cuerpo del documento sea scrolleable */
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
 .text-overlay {
