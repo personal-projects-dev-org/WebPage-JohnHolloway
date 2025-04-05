@@ -26,7 +26,8 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="assets/img/backgrounds/imagotipohollowayblanco.png" height="600px" alt="Holloway" /></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/img/backgrounds/imagotipohollowayblanco.png"
+                height="600px" alt="Holloway" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -84,13 +85,15 @@
                 que hace a este equipo una innovadora solución es la transmisión de datos NB- IoT desde dentro de la
                 cámara directamente a la nube.
             </p>
-            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary rounded-pill px-5 py-3 text-white">Leer m&aacute;s &rarr;</a>
+            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="btn btn-primary rounded-pill px-5 py-3 text-white">Leer m&aacute;s &rarr;</a>
         </div>
     </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" role="dialog" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" role="dialog" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -100,12 +103,23 @@
             <div class="modal-body">
                 <h5>Características Principales:</h5>
                 <ul>
-                    <li><strong>Tecnología IoT (NB-IoT):</strong> Transmite datos de forma eficiente desde la cámara directamente a la nube, permitiendo el monitoreo remoto y la gestión de las fugas en tiempo real.</li>
-                    <li><strong>Correlación Automática:</strong> El dispositivo es capaz de detectar y localizar fugas con alta precisión utilizando algoritmos avanzados de correlación automática.</li>
-                    <li><strong>Inteligencia Artificial (AI):</strong> El uso de AI optimiza la capacidad de detección, identificando patrones de ruido y señales de fuga, lo que mejora la precisión y reduce los falsos positivos.</li>
-                    <li><strong>Alta Fiabilidad y Precisión:</strong> Con una base instalada de más de 50,000 unidades en menos de cuatro años, este equipo ha demostrado su fiabilidad en una variedad de aplicaciones globales.</li>
-                    <li><strong>Optimización de Instalación y Mantenimiento:</strong> Funciones avanzadas que facilitan la instalación, el mantenimiento y la actualización remota del sistema, mejorando la eficiencia operativa.</li>
-                    <li><strong>Transmisión de Datos en Tiempo Real:</strong> Los datos recopilados se envían automáticamente a la nube para su análisis y visualización, lo que permite una toma de decisiones más rápida y precisa.</li>
+                    <li><strong>Tecnología IoT (NB-IoT):</strong> Transmite datos de forma eficiente desde la cámara
+                        directamente a la nube, permitiendo el monitoreo remoto y la gestión de las fugas en tiempo
+                        real.</li>
+                    <li><strong>Correlación Automática:</strong> El dispositivo es capaz de detectar y localizar fugas
+                        con alta precisión utilizando algoritmos avanzados de correlación automática.</li>
+                    <li><strong>Inteligencia Artificial (AI):</strong> El uso de AI optimiza la capacidad de detección,
+                        identificando patrones de ruido y señales de fuga, lo que mejora la precisión y reduce los
+                        falsos positivos.</li>
+                    <li><strong>Alta Fiabilidad y Precisión:</strong> Con una base instalada de más de 50,000 unidades
+                        en menos de cuatro años, este equipo ha demostrado su fiabilidad en una variedad de aplicaciones
+                        globales.</li>
+                    <li><strong>Optimización de Instalación y Mantenimiento:</strong> Funciones avanzadas que facilitan
+                        la instalación, el mantenimiento y la actualización remota del sistema, mejorando la eficiencia
+                        operativa.</li>
+                    <li><strong>Transmisión de Datos en Tiempo Real:</strong> Los datos recopilados se envían
+                        automáticamente a la nube para su análisis y visualización, lo que permite una toma de
+                        decisiones más rápida y precisa.</li>
                 </ul>
             </div>
             <div class="modal-footer">
@@ -191,18 +205,18 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <input class="form-control" id="name" type="text" placeholder="Nombre *"
-                            data-sb-validations="required" name="Nombre" />
+                            data-sb-validations="required" name="Nombre" required />
                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                     </div>
                     <div class="form-group">
                         <input class="form-control" id="email" type="email" placeholder="Email *"
-                            data-sb-validations="required,email" name="email" />
+                            data-sb-validations="required,email" name="email" required />
                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                     </div>
                     <div class="form-group mb-md-0">
                         <input class="form-control" id="phone" type="tel" placeholder="Telefono *"
-                            data-sb-validations="required" name="Telefono" />
+                            data-sb-validations="required" name="Telefono" required />
                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
                         </div>
                     </div>
@@ -210,7 +224,7 @@
                 <div class="col-md-6">
                     <div class="form-group form-group-textarea mb-md-0">
                         <textarea class="form-control" id="message" placeholder="Mensaje *"
-                            data-sb-validations="required" name="Mensaje"></textarea>
+                            data-sb-validations="required" name="Mensaje" required></textarea>
                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                         </div>
                     </div>
@@ -229,7 +243,7 @@
                 <div class="text-center text-danger mb-3">Error enviando el mensaje!</div>
             </div>
             <!-- Submit Button-->
-            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton"
+            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton"
                     type="submit">Enviar</button></div>
             <input type="hidden" name="_next" value="https://solucionesholloway.com/">
         </form>

@@ -27,7 +27,8 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="assets/img/backgrounds/imagotipohollowayblanco.png" height="600px" alt="Holloway" /></a>
+        <a class="navbar-brand" href="index.html"><img src="assets/img/backgrounds/imagotipohollowayblanco.png"
+                height="600px" alt="Holloway" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -79,13 +80,15 @@
                 micrófono con trípode y micrófono de suelos, el AquaScope 3 puede detectar fugas bajo asfalto, terreno
                 suave, pavimento, concreto y en paredes, asegurando resultados rápidos y efectivos.
             </p>
-            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary rounded-pill px-5 py-3 text-white">Leer m&aacute;s &rarr;</a>
+            <a href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="btn btn-primary rounded-pill px-5 py-3 text-white">Leer m&aacute;s &rarr;</a>
         </div>
     </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" role="dialog" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" role="dialog" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -95,14 +98,20 @@
             <div class="modal-body">
                 <h5>Características Principales:</h5>
                 <ul>
-                    <li><strong>Tecnología Acústica Avanzada:</strong> El micrófono acústico amplifica las vibraciones generadas por el agua en sistemas presurizados, permitiendo una localización precisa de las fugas.</li>
-                    <li><strong>Varilla Electrónica Acústica:</strong> Mejora la sensibilidad y la precisión en la localización de fugas en terrenos difíciles o de acceso complicado.</li>
-                    <li><strong>Micrófono de Suelo:</strong> Permite escuchar las vibraciones del agua en suelos, facilitando la detección en terrenos irregulares.</li>
-                    <li><strong>Micrófono con Trípode:</strong> Asegura estabilidad y facilita la operación durante la detección en superficies duras como pavimento y concreto.</li>
-                    <li><strong>Imán Integrado:</strong> Permite sujetar el equipo a superficies metálicas, ofreciendo mayor facilidad y precisión en su uso.</li>
+                    <li><strong>Tecnología Acústica Avanzada:</strong> El micrófono acústico amplifica las vibraciones
+                        generadas por el agua en sistemas presurizados, permitiendo una localización precisa de las
+                        fugas.</li>
+                    <li><strong>Varilla Electrónica Acústica:</strong> Mejora la sensibilidad y la precisión en la
+                        localización de fugas en terrenos difíciles o de acceso complicado.</li>
+                    <li><strong>Micrófono de Suelo:</strong> Permite escuchar las vibraciones del agua en suelos,
+                        facilitando la detección en terrenos irregulares.</li>
+                    <li><strong>Micrófono con Trípode:</strong> Asegura estabilidad y facilita la operación durante la
+                        detección en superficies duras como pavimento y concreto.</li>
+                    <li><strong>Imán Integrado:</strong> Permite sujetar el equipo a superficies metálicas, ofreciendo
+                        mayor facilidad y precisión en su uso.</li>
 
                 </ul>
-                
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -132,18 +141,18 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <input class="form-control" id="name" type="text" placeholder="Nombre *"
-                            data-sb-validations="required" name="Nombre" />
+                            data-sb-validations="required" name="Nombre" required />
                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                     </div>
                     <div class="form-group">
                         <input class="form-control" id="email" type="email" placeholder="Email *"
-                            data-sb-validations="required,email" name="email" />
+                            data-sb-validations="required,email" name="email" required />
                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                     </div>
                     <div class="form-group mb-md-0">
                         <input class="form-control" id="phone" type="tel" placeholder="Telefono *"
-                            data-sb-validations="required" name="Telefono" />
+                            data-sb-validations="required" name="Telefono" required />
                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
                         </div>
                     </div>
@@ -151,7 +160,7 @@
                 <div class="col-md-6">
                     <div class="form-group form-group-textarea mb-md-0">
                         <textarea class="form-control" id="message" placeholder="Mensaje *"
-                            data-sb-validations="required" name="Mensaje"></textarea>
+                            data-sb-validations="required" name="Mensaje" required></textarea>
                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
                         </div>
                     </div>
@@ -170,7 +179,7 @@
                 <div class="text-center text-danger mb-3">Error enviando el mensaje!</div>
             </div>
             <!-- Submit Button-->
-            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton"
+            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton"
                     type="submit">Enviar</button></div>
             <input type="hidden" name="_next" value="https://solucionesholloway.com/">
         </form>
