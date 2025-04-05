@@ -13003,12 +13003,13 @@ header.mastheadAbout .masthead-heading {
 }
 
 .fullscreen-carousel {
-  position: absolute;
+  position: relative; /* Cambiado de absolute */
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  z-index: -1;
+  min-height: 100vh; /* Asegura que al menos mida el alto de la pantalla */
+  height: auto; /* Se ajusta al contenido si es mayor */
+  z-index: 0; /* Opcional, pero evita que se esconda el contenido */
 }
 
 .fullscreen-carousel .item {
