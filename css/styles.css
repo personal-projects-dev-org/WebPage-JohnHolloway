@@ -13026,7 +13026,8 @@ header.mastheadAbout .masthead-heading {
 /* Media queries para dispositivos móviles */
 @media (max-width: 767px) {
   .fullscreen-carousel .item img {
-    height: 85vh; /* Altura reducida en móviles para permitir scroll */
+    height: 100vh; /* Altura reducida en móviles para permitir scroll */
+    max-height: 100vh;     
   }
   
   /* Asegurar que el cuerpo del documento sea scrolleable */
@@ -13413,7 +13414,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   z-index: 1;
   -webkit-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
-  box-shadow: -20px 20px 69px -27px rgba(0, 0, 0, 0.33);
+  box-shadow: -20px 20px 69px -27px rgfullscreen-carouselba(0, 0, 0, 0.33);
 }
 
 .ftco-about ul.about-info {
