@@ -13048,14 +13048,10 @@ header.mastheadAbout .masthead-heading {
     /* Altura reducida en móviles para permitir scroll */
   }
 
-  .owl-carousel .owl-nav {
-    display: none;
-    /* Oculta las flechas de navegación */
-  }
-
-  .owl-carousel .owl-dots {
-    display: none;
-    /* Oculta los puntos de navegación */
+  /* Asegurar que el cuerpo del documento sea scrolleable */
+  .fullscreen-carousel {
+    overflow-y: auto;
+    /* Permitir scroll en el contenedor del carrusel */ 
   }
 
   /* Asegurar que el cuerpo del documento sea scrolleable */
