@@ -13043,27 +13043,26 @@ header.mastheadAbout .masthead-heading {
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 767px) {
+  .fullscreen-carousel .item img {
+    height: 100vh;
+    /* Altura reducida en móviles para permitir scroll */
+  }
+
+  .owl-carousel .owl-nav {
+    display: none;
+    /* Oculta las flechas de navegación */
+  }
+
+  .owl-carousel .owl-dots {
+    display: none;
+    /* Oculta los puntos de navegación */
+  }
+
+  /* Asegurar que el cuerpo del documento sea scrolleable */
   html,
   body {
+    overflow-x: hidden;
     overflow-y: auto;
-    height: auto;
-  }
-
-  .fullscreen-carousel {
-    height: auto !important;
-    min-height: 100vh;
-    overflow-y: visible;
-    position: relative;
-  }
-
-  .fullscreen-carousel .item {
-    height: auto;
-  }
-
-  .fullscreen-carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 }
 
