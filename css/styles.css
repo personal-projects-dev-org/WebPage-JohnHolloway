@@ -13043,23 +13043,11 @@ header.mastheadAbout .masthead-heading {
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 767px) {
-  .fullscreen-carousel .item img {
-    height: 100vh;
-position: static;
-    /* Altura reducida en móviles para permitir scroll */
-  }
-
-  /* Asegurar que el cuerpo del documento sea scrolleable */
   .fullscreen-carousel {
-    overflow-y: auto;
-    /* Permitir scroll en el contenedor del carrusel */ 
-  }
-
-  /* Asegurar que el cuerpo del documento sea scrolleable */
-  html,
-  body {
-    overflow-x: hidden;
-    overflow-y: auto;
+    height: 50vh !important;
+    min-height: unset;
+    overflow: visible;
+    position: relative;
   }
 }
 
