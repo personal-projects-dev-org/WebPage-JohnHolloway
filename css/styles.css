@@ -13045,6 +13045,7 @@ header.mastheadAbout .masthead-heading {
 @media (max-width: 767px) {
   .fullscreen-carousel .item img {
     height: 100vh;
+position: static;
     /* Altura reducida en móviles para permitir scroll */
   }
 
