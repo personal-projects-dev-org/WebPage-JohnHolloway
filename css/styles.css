@@ -13041,26 +13041,42 @@ header.mastheadAbout .masthead-heading {
   filter: brightness(20%) contrast(100%) opacity(0.9);
 }
 
-/* Media queries para dispositivos móviles */
-@media (max-width: 767px) {
-  .fullscreen-carousel .item img {
-    height: 100vh;
-    /* Altura reducida en móviles para permitir scroll */
-  }
 
-  /* Asegurar que el cuerpo del documento sea scrolleable */
+@media (max-width: 768px) {
   .fullscreen-carousel {
-    overflow-y: auto;
-    /* Permitir scroll en el contenedor del carrusel */ 
+    height: 80vh; /* Reduce altura en móviles para permitir ver que hay más contenido */
+    min-height: 400px; /* Altura mínima para mantener estética */
   }
-
-  /* Asegurar que el cuerpo del documento sea scrolleable */
-  html,
-  body {
-    overflow-x: hidden;
-    overflow-y: auto;
+  
+  /* Indicador visual de scroll */
+  .fullscreen-carousel:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: bounce 2s infinite;
+    opacity: 0.7;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    40% {
+      transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+      transform: translateX(-50%) translateY(-5px);
+    }
   }
 }
+
 
 .text-overlay {
   position: absolute;
