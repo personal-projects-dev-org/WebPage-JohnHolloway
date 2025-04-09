@@ -501,6 +501,8 @@
                 nav: false,
                 animateOut: 'fadeOut',  // Desvanecer al salir
                 animateIn: 'fadeIn',  // Aparecer al entrar
+                touchDrag: true,
+                
 
                 onInitialized: function (event) {
                     // Muestra el texto de la primera imagen con un pequeño retraso
@@ -520,37 +522,6 @@
                 }
             });
         });
-
-
-        // Ejecutar después de que todo se cargue
-  window.addEventListener('load', function() {
-    // Función para verificar y forzar el scroll
-    function forceScroll() {
-      // Si estamos en móvil
-      if (window.innerWidth <= 768) {
-        // Forzar overflow y position
-        document.body.style.setProperty('overflow', 'auto', 'important');
-        document.body.style.setProperty('position', 'relative', 'important');
-        document.body.style.setProperty('height', 'auto', 'important');
-        
-        document.documentElement.style.setProperty('overflow', 'auto', 'important');
-        document.documentElement.style.setProperty('position', 'relative', 'important');
-        document.documentElement.style.setProperty('height', 'auto', 'important');
-        
-        // Forzar que el carrusel no bloquee
-        document.querySelectorAll('.owl-carousel, .owl-stage-outer').forEach(function(el) {
-          el.style.setProperty('overflow', 'visible', 'important');
-          el.style.setProperty('overflow-y', 'visible', 'important');
-        });
-      }
-    }
-    
-    // Ejecutar inmediatamente
-    forceScroll();
-    
-    // Y verificar cada 500ms por si algún script lo sobrescribe
-    setInterval(forceScroll, 500);
-  });
 
     </script>
 
